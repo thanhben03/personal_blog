@@ -1,0 +1,8 @@
+RewriteEngine On
+#Xử lý Route CLIENT
+RewriteRule ^admin/edit/([A-Za-z0-9-]+) index.php?view=admin&action=edit&id=$1 [L]
+RewriteRule ^admin/([A-Za-z0-9-]+) index.php?view=admin&action=$1 [L]
+RewriteRule ^blog/([A-Za-z0-9-]+) index.php?view=client&action=view&slug=$1 [L]
+RewriteRule ^search/([A-Za-z0-9-]+) index.php?view=client&action=search&key=$1 [L]
+RewriteRule ^page/([A-Za-z0-9-]+) index.php?page=$1 [L]
+RewriteRule ^admin index.php?view=admin [L]
