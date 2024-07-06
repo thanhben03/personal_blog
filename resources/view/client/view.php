@@ -56,7 +56,7 @@ if (isset($_GET['slug'])) {
                         <ul class="comment-list">
                             <?php
                             foreach ($comments as $item) {
-                                $avatar = $item['image'] ?? 'https://www.croptecshow.com/wp-content/uploads/2017/04/guest-avatar-250x250px.png';
+                                $avatar = $item['image'] ?? 'https://i.pinimg.com/originals/ff/a0/9a/ffa09aec412db3f54deadf1b3781de2a.png';
                                 echo '
                                     <li class="comment">
                                         <div class="vcard">
